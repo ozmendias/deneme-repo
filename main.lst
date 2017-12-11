@@ -1,0 +1,84 @@
+CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 10:37
+
+               Filename:   C:\Users\personpc\Documents\GitHub\deneme-repo\main.lst
+
+               ROM used:   48 bytes (0%)
+                           Largest free fragment is 32720
+               RAM used:   4 (0%) at main() level
+                           4 (0%) worst case
+               Stack used: 0 locations
+               Stack size: 31
+
+*
+0000:  GOTO   0004
+.................... #include <main.h> 
+.................... #include <18F25K80.h> 
+.................... //////////// Standard Header file for the PIC18F25K80 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC18F25K80 
+....................  
+.................... #list 
+....................  
+.................... #device ADC=16 
+....................  
+.................... #FUSES NOWDT                 	//No Watch Dog Timer 
+....................  
+.................... #use delay(crystal=20000000) 
+.................... #use FIXED_IO( A_outputs=PIN_A0 ) 
+.................... #use FIXED_IO( B_outputs=PIN_B4 ) 
+....................  
+....................  
+....................  
+.................... #define AHMET  PIN_A0 
+.................... #define SEZGIN PIN_B4 
+.................... void main() 
+0004:  CLRF   FF8
+0006:  BCF    FD0.7
+0008:  MOVLB  F
+000A:  MOVF   x5C,W
+000C:  ANDLW  80
+000E:  MOVWF  x5C
+0010:  MOVLW  00
+0012:  MOVWF  x5D
+0014:  BCF    FC1.3
+0016:  BCF    FC1.4
+0018:  BCF    FC1.5
+001A:  CLRF   x5E
+001C:  CLRF   x5F
+.................... { 
+....................  
+....................    while(TRUE) 
+....................    { 
+....................        
+....................       output_low(AHMET); 
+001E:  MOVLW  FE
+0020:  MOVWF  F92
+0022:  BCF    F89.0
+....................       output_high(SEZGIN); 
+0024:  MOVLW  EF
+0026:  MOVWF  F93
+0028:  BSF    F8A.4
+002A:  GOTO   001E
+....................        
+....................    } 
+....................  
+.................... } 
+*
+002E:  SLEEP 
+
+Configuration Fuses:
+   Word  1: C215   VREGSLEEP INTRC_HP SOSC_DIG NOXINST HSH NOPLLEN FCMEN IESO
+   Word  2: 7C7E   PUT BROWNOUT BORV18 ZPBORM NOWDT WDT1048576
+   Word  3: 8900   CANB MSSPMSK7 MCLR
+   Word  4: 0091   STVREN BBSIZ2K NODEBUG
+   Word  5: C00F   NOPROTECT NOCPB NOCPD
+   Word  6: E00F   NOWRT NOWRTC NOWRTB NOWRTD
+   Word  7: 400F   NOEBTR NOEBTRB
