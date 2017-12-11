@@ -2,8 +2,6 @@
 
 #define AHMET  PIN_A0
 #define SEZGIN PIN_B4
-
-
 void main()
 {
 
@@ -19,7 +17,8 @@ void main()
       {
          output_low(Ahmet);
       }
-      mehmet = 20;
+      
+      mehmet = 15;
    }
 
 }

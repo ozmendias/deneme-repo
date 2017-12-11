@@ -19,6 +19,9 @@ void main()
       {
          output_low(Ahmet);
       }
+      
+      
+      
       mehmet = 20;
    }
 
