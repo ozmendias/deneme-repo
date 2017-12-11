@@ -2,7 +2,7 @@
 
 #define AHMET  PIN_A0
 #define SEZGIN PIN_B4
-#define FETTAH PIN_C4
+
 
 void main()
 {
@@ -18,14 +18,8 @@ void main()
       if(mehmet)
       {
          output_low(Ahmet);
-         mehmet = 20;
       }
-      
-      
-      else 
-      {
-         output_low(fettah);
-      }
+      mehmet = 20;
    }
 
 }

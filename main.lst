@@ -1,9 +1,9 @@
-CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 11:06
+CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 11:54
 
                Filename:   C:\Users\personpc\Documents\GitHub\deneme-repo\main.lst
 
-               ROM used:   68 bytes (0%)
-                           Largest free fragment is 32700
+               ROM used:   78 bytes (0%)
+                           Largest free fragment is 32690
                RAM used:   5 (0%) at main() level
                            5 (0%) worst case
                Stack used: 0 locations
@@ -29,17 +29,17 @@ CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 11:06
 ....................  
 .................... #device ADC=16 
 ....................  
-.................... #FUSES NOWDT                 	//No Watch Dog Timer 
+.................... #FUSES NOWDT                    //No Watch Dog Timer 
 ....................  
 .................... #use delay(crystal=20000000) 
 .................... #use FIXED_IO( A_outputs=PIN_A0 ) 
 .................... #use FIXED_IO( B_outputs=PIN_B4 ) 
-....................  
+.................... #use FIXED_IO( C_outputs=PIN_C4 ) 
 ....................  
 ....................  
 .................... #define AHMET  PIN_A0 
 .................... #define SEZGIN PIN_B4 
-....................  
+.................... #define FETTAH PIN_C4 
 ....................  
 .................... void main() 
 0004:  CLRF   FF8
@@ -75,22 +75,32 @@ CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 11:06
 ....................       if(mehmet) 
 002C:  MOVF   05,F
 002E:  BTFSC  FD8.2
-0030:  GOTO   003A
+0030:  GOTO   0042
 ....................       { 
 ....................          output_low(Ahmet); 
 0034:  MOVLW  FE
 0036:  MOVWF  F92
 0038:  BCF    F89.0
-....................       } 
-....................       mehmet = 20; 
+....................          mehmet = 20; 
 003A:  MOVLW  14
 003C:  MOVWF  05
-003E:  GOTO   001E
+....................       } 
+003E:  GOTO   0048
+....................        
+....................        
+....................       else  
+....................       { 
+....................          output_low(fettah); 
+0042:  MOVLW  EF
+0044:  MOVWF  F94
+0046:  BCF    F8B.4
+....................       } 
+0048:  GOTO   001E
 ....................    } 
 ....................  
 .................... } 
 *
-0042:  SLEEP 
+004C:  SLEEP 
 
 Configuration Fuses:
    Word  1: C215   VREGSLEEP INTRC_HP SOSC_DIG NOXINST HSH NOPLLEN FCMEN IESO
