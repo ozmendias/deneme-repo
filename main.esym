@@ -1,10 +1,10 @@
 F N "main" 0 5 ""
-D G "__PCH__" 0 17 ""5.075""
-D G "__DEVICE__" 0 17 "2580"
-D G "__DATE__" 0 17 ""11-Ara-17""
-D G "__TIME__" 0 17 ""10:37:49""
-D G "_UNICODE" 0 17 ""?""
-D G "__EVAL" 0 17 ""?"" "Standard Header file for the PIC18F25K80 device ////////////////"
+D G "__PCH__" 0 26 ""5.075""
+D G "__DEVICE__" 0 26 "2580"
+D G "__DATE__" 0 26 ""11-Ara-17""
+D G "__TIME__" 0 26 ""10:46:35""
+D G "_UNICODE" 0 26 ""?""
+D G "__EVAL" 0 26 ""?"" "Standard Header file for the PIC18F25K80 device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 f N "set_tris_a" 2 46 ""
 v L "value" 2 46 "int8" `55 
@@ -1267,6 +1267,7 @@ D G "AHMET" 0 3 "PIN_A0"
 D G "SEZGIN" 0 4 "PIN_B4"
 F N "main" 0 5 ""
 F G "main" 0 6 "void()" `657 
+V L "mehmet" 0 14 "int8" `660 
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep_ulpwu" 1 0

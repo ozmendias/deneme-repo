@@ -3,31 +3,32 @@
 001     _RETURN_
 002     @SCRATCH
 003     @SCRATCH
-F48     CCP_5
+005     main.mehmet
 F48     CCP_5_LOW
+F48     CCP_5
 F49     CCP_5_HIGH
-F4B     CCP_4
 F4B     CCP_4_LOW
+F4B     CCP_4
 F4C     CCP_4_HIGH
 F4E     CCP_3_LOW
 F4E     CCP_3
 F4F     CCP_3_HIGH
-F51     CCP_2
 F51     CCP_2_LOW
+F51     CCP_2
 F52     CCP_2_HIGH
 FB4.6   C1OUT
 FB4.7   C2OUT
-FBC     CCP_1
 FBC     CCP_1_LOW
+FBC     CCP_1
 FBD     CCP_1_HIGH
-FE1-FE2 @READ_PACKED_MEMORY.P1
-FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
 FE9-FEA @WRITE_PACKED_MEMORY.P1
-FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
 FE9-FEA @READ_PROGRAM_MEMORY.P3
-FE9-FEA @WRITE_PROGRAM_MEMORY.P4
-FF6-FF8 @READ_PROGRAM_MEMORY.P1
-FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
 
 ROM Allocation:
 000004  main
@@ -38,14 +39,14 @@ Project Directory:
     C:\Users\personpc\Documents\GitHub\deneme-repo\
 
 Project Files:
-    main.c                                                  [11-Ara-17 10:37  CRC=D872A938]
+    main.c                                                  [11-Ara-17 10:45  CRC=BFC7ACFA]
     main.h                                                  [11-Ara-17 10:34  CRC=D872A938]
     ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F25K80.h [20-Eki-17 15:23  CRC=7DDB289A]
 
-Source signature=AC9BA3A4
+Source signature=93F0A766
 Program memory checksum=0000
 Program memory CRC=0000
-Hex file CRC=DFD1
+Hex file CRC=B74A
 
 Units:
     main (main)

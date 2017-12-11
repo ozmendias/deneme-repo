@@ -17,8 +17,6 @@ void main()
       {
          output_low(Ahmet);
       }
-      
-      mehmet = 15;
    }
 
 }

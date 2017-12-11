@@ -1,11 +1,11 @@
-CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 10:37
+CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 10:46
 
                Filename:   C:\Users\personpc\Documents\GitHub\deneme-repo\main.lst
 
-               ROM used:   48 bytes (0%)
-                           Largest free fragment is 32720
-               RAM used:   4 (0%) at main() level
-                           4 (0%) worst case
+               ROM used:   68 bytes (0%)
+                           Largest free fragment is 32700
+               RAM used:   5 (0%) at main() level
+                           5 (0%) worst case
                Stack used: 0 locations
                Stack size: 31
 
@@ -66,13 +66,30 @@ CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 10:37
 0024:  MOVLW  EF
 0026:  MOVWF  F93
 0028:  BSF    F8A.4
-002A:  GOTO   001E
 ....................        
+....................       int8 mehmet = 0; 
+002A:  CLRF   05
+....................        
+....................       if(mehmet) 
+002C:  MOVF   05,F
+002E:  BTFSC  FD8.2
+0030:  GOTO   003A
+....................       { 
+....................          output_low(Ahmet); 
+0034:  MOVLW  FE
+0036:  MOVWF  F92
+0038:  BCF    F89.0
+....................       } 
+....................        
+....................       mehmet = 15; 
+003A:  MOVLW  0F
+003C:  MOVWF  05
+003E:  GOTO   001E
 ....................    } 
 ....................  
 .................... } 
 *
-002E:  SLEEP 
+0042:  SLEEP 
 
 Configuration Fuses:
    Word  1: C215   VREGSLEEP INTRC_HP SOSC_DIG NOXINST HSH NOPLLEN FCMEN IESO

@@ -11,14 +11,6 @@ void main()
       output_low(AHMET);
       output_high(SEZGIN);
       
-      int8 mehmet = 0;
-      
-      if(mehmet)
-      {
-         output_low(Ahmet);
-      }
-      
-      mehmet = 15;
    }
 
 }
