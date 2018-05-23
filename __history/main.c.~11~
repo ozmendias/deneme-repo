@@ -6,7 +6,6 @@
 
 int8 mehmet = 0;
 
-
 void main()
 {
 
@@ -16,7 +15,7 @@ void main()
       output_low(AHMET);
       output_high(SEZGIN);
       mehmet++;
-   
+	
       
       
       if(mehmet==10)

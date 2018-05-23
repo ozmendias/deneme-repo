@@ -13,11 +13,11 @@ Stack size: 31
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   35    11 100  main.c
+   36    11 100  main.c
    10     0   0  main.h
   926     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F25K80.h
 ----- -----
-  971    11 Total
+  972    11 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
