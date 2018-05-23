@@ -19,7 +19,7 @@ void main()
    
       
       
-      if(mehmet==10)
+      if(mehmet==15) //10du 15 yapýldý
       {
          output_low(Ahmet);
          mehmet = 0;
