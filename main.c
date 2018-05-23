@@ -4,6 +4,8 @@
 #define SEZGIN PIN_B4
 #define FETTAH PIN_C4
 
+int8 mehmet = 0;
+
 void main()
 {
 
@@ -12,13 +14,14 @@ void main()
       
       output_low(AHMET);
       output_high(SEZGIN);
+      mehmet++;
+	
       
-      int8 mehmet = 0;
       
-      if(mehmet)
+      if(mehmet==10)
       {
          output_low(Ahmet);
-         mehmet = 20;
+         mehmet = 0;
       }
       
       
