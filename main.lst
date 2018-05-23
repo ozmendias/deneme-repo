@@ -1,9 +1,9 @@
-CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 11:54
+CCS PCH C Compiler, Version 5.078, 41405               23-May-18 09:59
 
-               Filename:   C:\Users\personpc\Documents\GitHub\deneme-repo\main.lst
+               Filename:   C:\Users\Artemis\Documents\GitHub\deneme-repo\main.lst
 
-               ROM used:   78 bytes (0%)
-                           Largest free fragment is 32690
+               ROM used:   80 bytes (0%)
+                           Largest free fragment is 32688
                RAM used:   5 (0%) at main() level
                            5 (0%) worst case
                Stack used: 0 locations
@@ -41,66 +41,70 @@ CCS PCH C Compiler, Version 5.075, 38747               11-Ara-17 11:54
 .................... #define SEZGIN PIN_B4 
 .................... #define FETTAH PIN_C4 
 ....................  
+.................... int8 mehmet = 0; 
+....................  
 .................... void main() 
 0004:  CLRF   FF8
 0006:  BCF    FD0.7
-0008:  MOVLB  F
-000A:  MOVF   x5C,W
-000C:  ANDLW  80
-000E:  MOVWF  x5C
-0010:  MOVLW  00
-0012:  MOVWF  x5D
-0014:  BCF    FC1.3
-0016:  BCF    FC1.4
-0018:  BCF    FC1.5
-001A:  CLRF   x5E
-001C:  CLRF   x5F
+0008:  CLRF   04
+000A:  MOVLB  F
+000C:  MOVF   x5C,W
+000E:  ANDLW  80
+0010:  MOVWF  x5C
+0012:  MOVLW  00
+0014:  MOVWF  x5D
+0016:  BCF    FC1.3
+0018:  BCF    FC1.4
+001A:  BCF    FC1.5
+001C:  CLRF   x5E
+001E:  CLRF   x5F
 .................... { 
 ....................  
 ....................    while(TRUE) 
 ....................    { 
 ....................        
 ....................       output_low(AHMET); 
-001E:  MOVLW  FE
-0020:  MOVWF  F92
-0022:  BCF    F89.0
+0020:  MOVLW  FE
+0022:  MOVWF  F92
+0024:  BCF    F89.0
 ....................       output_high(SEZGIN); 
-0024:  MOVLW  EF
-0026:  MOVWF  F93
-0028:  BSF    F8A.4
+0026:  MOVLW  EF
+0028:  MOVWF  F93
+002A:  BSF    F8A.4
+....................       mehmet++; 
+002C:  INCF   04,F
+.................... 	 
 ....................        
-....................       int8 mehmet = 0; 
-002A:  CLRF   05
 ....................        
-....................       if(mehmet) 
-002C:  MOVF   05,F
-002E:  BTFSC  FD8.2
-0030:  GOTO   0042
+....................       if(mehmet==10) 
+002E:  MOVF   04,W
+0030:  SUBLW  0A
+0032:  BTFSS  FD8.2
+0034:  GOTO   0044
 ....................       { 
 ....................          output_low(Ahmet); 
-0034:  MOVLW  FE
-0036:  MOVWF  F92
-0038:  BCF    F89.0
-....................          mehmet = 20; 
-003A:  MOVLW  14
-003C:  MOVWF  05
+0038:  MOVLW  FE
+003A:  MOVWF  F92
+003C:  BCF    F89.0
+....................          mehmet = 0; 
+003E:  CLRF   04
 ....................       } 
-003E:  GOTO   0048
+0040:  GOTO   004A
 ....................        
 ....................        
 ....................       else  
 ....................       { 
 ....................          output_low(fettah); 
-0042:  MOVLW  EF
-0044:  MOVWF  F94
-0046:  BCF    F8B.4
+0044:  MOVLW  EF
+0046:  MOVWF  F94
+0048:  BCF    F8B.4
 ....................       } 
-0048:  GOTO   001E
+004A:  GOTO   0020
 ....................    } 
 ....................  
 .................... } 
 *
-004C:  SLEEP 
+004E:  SLEEP 
 
 Configuration Fuses:
    Word  1: C215   VREGSLEEP INTRC_HP SOSC_DIG NOXINST HSH NOPLLEN FCMEN IESO

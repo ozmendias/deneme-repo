@@ -3,12 +3,12 @@
 001     _RETURN_
 002     @SCRATCH
 003     @SCRATCH
-005     main.mehmet
+004     mehmet
 F48     CCP_5_LOW
 F48     CCP_5
 F49     CCP_5_HIGH
-F4B     CCP_4_LOW
 F4B     CCP_4
+F4B     CCP_4_LOW
 F4C     CCP_4_HIGH
 F4E     CCP_3_LOW
 F4E     CCP_3
@@ -21,32 +21,32 @@ FB4.7   C2OUT
 FBC     CCP_1_LOW
 FBC     CCP_1
 FBD     CCP_1_HIGH
-FE1-FE2 @WRITE_PACKED_MEMORY.P1
-FE1-FE2 @READ_PACKED_MEMORY.P2
-FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
 FE9-FEA @WRITE_PROGRAM_MEMORY.P2
-FE9-FEA @READ_PROGRAM_MEMORY.P3
-FE9-FEA @READ_PACKED_MEMORY.P4
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
 FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
 FF6-FF8 @READ_PROGRAM_MEMORY.P2
 
 ROM Allocation:
 000004  main
 000004  @cinit1
-00001E  @cinit2
+000020  @cinit2
 
 Project Directory:
-    C:\Users\personpc\Documents\GitHub\deneme-repo\
+    C:\Users\Artemis\Documents\GitHub\deneme-repo\
 
 Project Files:
-    main.c                                                  [11-Ara-17 11:54  CRC=F817D64F]
-    main.h                                                  [11-Ara-17 11:54  CRC=D872A938]
-    ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F25K80.h [20-Eki-17 15:23  CRC=7DDB289A]
+    main.c                                                  [23-May-18 09:56  CRC=34ED0D7B]
+    main.h                                                  [23-May-18 09:46  CRC=D872A938]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F25K80.h [02-Nis-18 08:21  CRC=6EB35D35]
 
-Source signature=CC40D0BB
+Source signature=EAC6711D
 Program memory checksum=0000
 Program memory CRC=0000
-Hex file CRC=5066
+Hex file CRC=E725
 
 Units:
     main (main)

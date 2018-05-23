@@ -1,9 +1,9 @@
 
-ROM used:   78/32768 (0%)
-            78/32768 (0%) including unused fragments
+ROM used:   80/32768 (0%)
+            80/32768 (0%) including unused fragments
 
             0.1 Average locations per line
-            7.1 Average locations per statement
+            7.3 Average locations per statement
 
 RAM used:   5/3648 (0%) at main() level
             5/3648 (0%) worst case
@@ -13,33 +13,33 @@ Stack size: 31
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   32    11 100  main.c
+   35    11 100  main.c
    10     0   0  main.h
-  918     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F25K80.h
+  926     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F25K80.h
 ----- -----
-  960    11 Total
+  971    11 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
-0     74  47    1    170  3.1  main
+0     76  48    0    172  3.9  main
  Inline         0             @cinit1
 
 Program metrics:
     Functions               1
     Statements              11
     Comments                165
-    Volume (V)              172
-    Difficulty (D)          2.9
-    Effort to implement (E) 501
-    Time to implement (T)   0 minutes
+    Volume (V)              174
+    Difficulty (D)          3.7
+    Effort to implement (E) 645
+    Time to implement (T)   1 minutes
     Est Delivered Bugs (B)  0
     Cyclomatic Complexity   1
-    Maintainability (MI)    149
+    Maintainability (MI)    148
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
-00004-07FFE    74  32690  
+00004-07FFE    76  32688  
 
 
 
