@@ -1,4 +1,8 @@
-Compiling C:\Users\Artemis\Documents\GitHub\deneme-repo\main on 23-May-18 at 10:06
+Compiling C:\Users\personpc\Documents\GitHub\deneme-repo\main on 23-May-18 at 11:33
+*** Error 24 "C:\Program Files (x86)\PICC\Devices\18F25K80.h" Line 11(9,20): Unknown device type    -- Try PCH
+      1 Errors,  0 Warnings.
+Build Failed.
+Compiling C:\Users\personpc\Documents\GitHub\deneme-repo\main on 23-May-18 at 11:33
       Memory usage:   ROM=0%      RAM=0% - 0%
       0 Errors,  0 Warnings.
 Build Successful.

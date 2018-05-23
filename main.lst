@@ -1,6 +1,6 @@
-CCS PCH C Compiler, Version 5.078, 41405               23-May-18 10:06
+CCS PCH C Compiler, Version 5.078, 41405               23-May-18 11:33
 
-               Filename:   C:\Users\Artemis\Documents\GitHub\deneme-repo\main.lst
+               Filename:   C:\Users\personpc\Documents\GitHub\deneme-repo\main.lst
 
                ROM used:   80 bytes (0%)
                            Largest free fragment is 32688
@@ -77,9 +77,9 @@ CCS PCH C Compiler, Version 5.078, 41405               23-May-18 10:06
 ....................     
 ....................        
 ....................        
-....................       if(mehmet==10) 
+....................       if(mehmet==20) //10du 15 yapýldý 
 002E:  MOVF   04,W
-0030:  SUBLW  0A
+0030:  SUBLW  14
 0032:  BTFSS  FD8.2
 0034:  GOTO   0044
 ....................       { 

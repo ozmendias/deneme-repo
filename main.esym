@@ -1,9 +1,9 @@
-D G "__PCH__" 0 36 ""5.078""
-D G "__DEVICE__" 0 36 "2580"
-D G "__DATE__" 0 36 ""23-MAY-18""
-D G "__TIME__" 0 36 ""10:06:15""
-D G "_UNICODE" 0 36 ""?""
-D G "__EVAL" 0 36 ""?"" "Standard Header file for the PIC18F25K80 device ////////////////"
+D G "__PCH__" 0 0 ""5.078""
+D G "__DEVICE__" 0 0 ""
+D G "__DATE__" 0 0 ""23-MAY-18""
+D G "__TIME__" 0 0 ""11:33:36""
+D G "_UNICODE" 0 0 ""?""
+D G "__EVAL" 0 0 ""?"" "Standard Header file for the PIC18F25K80 device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 f N "set_tris_a" 2 46 ""
 v L "value" 2 46 "int8" `55 
@@ -563,9 +563,9 @@ f N "read_adc" 2 569 ""
 f G "read_adc" 2 569 "int16()" `250 
 f N "read_adc" 2 570 ""
 v L "mode" 2 570 "int8" `251 
-f G "read_adc" 2 570 "int16(int8 mode,int32 pins)" `250 
+f G "read_adc" 2 570 "int16(int8 mode)" `250 
 f N "adc_done" 2 571 ""
-f B "adc_done" 2 571 "int8(int8 mode,int32 pins)" `250  "Constants used for SETUP_ADC() are:"
+f B "adc_done" 2 571 "int8(int8 mode)" `250  "Constants used for SETUP_ADC() are:"
 d G "ADC_OFF" 2 573 "0" "ADC Off"
 d G "ADC_CLOCK_DIV_2" 2 574 "0x100"
 d G "ADC_CLOCK_DIV_4" 2 575 "0x04"
@@ -974,9 +974,9 @@ f B "i2c_transfer_in" 2 735 "void(int8 stream,int8 address,*int8 rData,int8 rCou
 f N "spi_xfer" 2 738 ""
 f B "spi_xfer" 2 738 "int8()" `521 
 f N "spi_xfer" 2 739 ""
-f G "spi_xfer" 2 739 "int16(int8 data)" `522 
+f G "spi_xfer" 2 739 "int16()" `522 
 f N "spi_xfer" 2 740 ""
-f G "spi_xfer" 2 740 "int32(int8 data)" `522 
+f G "spi_xfer" 2 740 "int32()" `522 
 f N "spi_xfer" 2 741 ""
 v L "data" 2 741 "int8" `523 
 f B "spi_xfer" 2 741 "int8(int8 data)" `522 
@@ -1056,18 +1056,18 @@ f B "spi_prewrite" 2 760 "void(int8 ,int32 data)" `575
 f N "spi_xfer_in" 2 761 ""
 f B "spi_xfer_in" 2 761 "int8()" `578 
 f N "spi_xfer_in" 2 762 ""
-f G "spi_xfer_in" 2 762 "int16(int8 bits)" `579 
+f G "spi_xfer_in" 2 762 "int16()" `579 
 f N "spi_xfer_in" 2 763 ""
-f G "spi_xfer_in" 2 763 "int32(int8 bits)" `579 
+f G "spi_xfer_in" 2 763 "int32()" `579 
 f N "spi_xfer_in" 2 764 ""
 v L "bits" 2 764 "int8" `580 
 f B "spi_xfer_in" 2 764 "int8(int8 bits)" `579 
 f N "spi_xfer_in" 2 765 ""
 v L "bits" 2 765 "int8" `582 
-f G "spi_xfer_in" 2 765 "int16(int8 bits,int8 bits)" `581 
+f G "spi_xfer_in" 2 765 "int16(int8 bits)" `581 
 f N "spi_xfer_in" 2 766 ""
 v L "bits" 2 766 "int8" `582 
-f G "spi_xfer_in" 2 766 "int32(int8 bits,int8 bits)" `581 
+f G "spi_xfer_in" 2 766 "int32(int8 bits)" `581 
 f N "spi_xfer_in" 2 767 ""
 v L "stream" 2 767 "int8" `582 
 v L "bits" 2 767 "int8" `583 
@@ -1075,15 +1075,15 @@ f B "spi_xfer_in" 2 767 "int8(int8 stream,int8 bits)" `581
 f N "spi_xfer_in" 2 768 ""
 v L "stream" 2 768 "int8" `582 
 v L "bits" 2 768 "int8" `586 
-f G "spi_xfer_in" 2 768 "int16(int8 stream,int8 bits,int8 task)" `584 
+f G "spi_xfer_in" 2 768 "int16(int8 stream,int8 bits)" `584 
 f N "spi_xfer_in" 2 769 ""
 v L "stream" 2 769 "int8" `582 
 v L "bits" 2 769 "int8" `586 
-f G "spi_xfer_in" 2 769 "int32(int8 stream,int8 bits,int8 task)" `584  "#use rtos() Prototypes:"
+f G "spi_xfer_in" 2 769 "int32(int8 stream,int8 bits)" `584  "#use rtos() Prototypes:"
 f N "rtos_run" 2 772 ""
-f B "rtos_run" 2 772 "void(int8 stream,int8 bits,int8 task)" `584 
+f B "rtos_run" 2 772 "void(int8 stream,int8 bits)" `584 
 f N "rtos_yield" 2 773 ""
-f B "rtos_yield" 2 773 "void(int8 bits,int8 task)" `585 
+f B "rtos_yield" 2 773 "void(int8 bits)" `585 
 f N "rtos_enable" 2 774 ""
 v L "task" 2 774 "int8" `587 
 f B "rtos_enable" 2 774 "void(int8 task)" `586 
@@ -1119,9 +1119,9 @@ f B "rtos_stats" 2 784 "void(int8 task,*int8 stat)" `604  "#use timer() Prototyp
 f N "get_ticks" 2 787 ""
 f B "get_ticks" 2 787 "int8()" `607 
 f N "get_ticks" 2 788 ""
-f G "get_ticks" 2 788 "int16(int8 stream)" `608 
+f G "get_ticks" 2 788 "int16()" `608 
 f N "get_ticks" 2 789 ""
-f G "get_ticks" 2 789 "int32(int8 stream)" `608 
+f G "get_ticks" 2 789 "int32()" `608 
 f N "get_ticks" 2 790 ""
 v L "stream" 2 790 "int8" `609 
 f B "get_ticks" 2 790 "int8(int8 stream)" `608 
@@ -1316,6 +1316,7 @@ D G "FETTAH" 0 5 "PIN_C4"
 V G "mehmet" 0 7 "int8" `697 
 F N "main" 0 10 ""
 F G "main" 0 11 "void()" `698 
+C L "main" 0 22 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep_ulpwu" 1 0
