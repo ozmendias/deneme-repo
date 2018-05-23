@@ -23,10 +23,13 @@ D1_L=2
 D1_L1=[38076]Project Opened.
 D1_L2=[38080]Started Editing.
 D2=23-05-2018
-D2_L=3
+D2_L=6
 D2_L1=[35985]Project Opened.
 D2_L2=[36372]Started Editing.
 D2_L3=[41614]Project Opened.
+D2_L4=[43008]Project Closed.
+D2_L5=[43536]Project Opened.
+D2_L6=[43544]Started Editing.
 
 [Opened Files]
 1=main.c
@@ -38,7 +41,7 @@ Count=2
 Type=4
 
 [defines]
-buildcount=5
+buildcount=6
 [Units]
 Count=1
 1=main (main)
