@@ -1,7 +1,7 @@
 D G "__PCH__" 0 37 ""5.078""
 D G "__DEVICE__" 0 37 "2580"
 D G "__DATE__" 0 37 ""23-MAY-18""
-D G "__TIME__" 0 37 ""12:05:46""
+D G "__TIME__" 0 37 ""13:42:29""
 D G "_UNICODE" 0 37 ""?""
 D G "__EVAL" 0 37 ""?"" "Standard Header file for the PIC18F25K80 device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"

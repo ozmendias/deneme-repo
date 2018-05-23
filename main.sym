@@ -39,14 +39,14 @@ Project Directory:
     C:\Users\personpc\Documents\GitHub\deneme-repo\
 
 Project Files:
-    main.c                                                  [23-May-18 12:05  CRC=3AC36EAE]
+    main.c                                                  [23-May-18 13:42  CRC=3AC36EAE]
     main.h                                                  [23-May-18 10:56  CRC=D872A938]
     ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F25K80.h [02-Nis-18 08:21  CRC=6EB35D35]
 
 Source signature=F09CD250
 Program memory checksum=0000
 Program memory CRC=0000
-Hex file CRC=66DC
+Hex file CRC=E725
 
 Units:
     main (main)

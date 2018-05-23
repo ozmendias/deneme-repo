@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.078, 41405               23-May-18 12:05
+CCS PCH C Compiler, Version 5.078, 41405               23-May-18 13:42
 
                Filename:   C:\Users\personpc\Documents\GitHub\deneme-repo\main.lst
 
@@ -77,9 +77,9 @@ CCS PCH C Compiler, Version 5.078, 41405               23-May-18 12:05
 ....................     
 ....................        
 ....................        
-....................       if(mehmet==25) //10du 15 yapýldý 
+....................       if(mehmet==10) //10du 15 yapýldý 
 002E:  MOVF   04,W
-0030:  SUBLW  19
+0030:  SUBLW  0A
 0032:  BTFSS  FD8.2
 0034:  GOTO   0044
 ....................       { 
